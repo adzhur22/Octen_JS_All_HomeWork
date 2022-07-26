@@ -57,8 +57,10 @@ let book4 = {
     title: 'The adventures of Tom Sawyer',
     pageCount: 310,
     genre: 'Novel',
-    authors: [{name: 'Mark Twain', age: 1835}]
+    authors: [{name: 'Mark Twain', age: 1835}] // у книги немає співавторів, тому елемент масиву тільки один
 };
+
+
 console.log(book4.authors[0]);  // Додаткво попробував виведення елементу масива в юзері (цілком)
 console.log(book4.authors[0].name); // виведення елементу масива в юзері (Тільки ім'я автора)
 console.log(book4['authors'][0]); // Інший спосіб
@@ -66,18 +68,19 @@ console.log(book4['authors'][0]['name']); // Інший спосіб
 console.log(book4['authors'][0].name);// Міксований спосіб
 
 
+
 let book5 = {
     title: 'The Little Prince',
     pageCount: 110,
     genre: "Children's literature",
-    authors: [{name: "Antoine de Saint-Exupéry", age: 1900}]
+    authors: [{name: "Antoine de Saint-Exupéry", age: 1900}] // у книги немає співавторів, тому елемент масиву тільки один
 };
 
 let book6 = {
     title: 'Robinson Crusoe',
     pageCount: 500,
     genre: 'survival',
-    authors: [{name: "Daniel Defoe", age: 1660}]
+    authors: [{name: "Daniel Defoe", age: 1660}] // у книги немає співавторів, тому елемент масиву тільки один
 };
 
 
