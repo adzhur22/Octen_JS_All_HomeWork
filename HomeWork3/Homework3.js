@@ -203,3 +203,7 @@ else {
 
 let end = prompt('МОЖЕ БУТИ ЩО ЗАВГОДНО: стрінг, число, undefined, null  і тд включно') || 'default';
 console.log(end);
+
+
+
+//        Дякую що переглянули:)
