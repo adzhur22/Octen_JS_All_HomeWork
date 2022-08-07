@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add comments">
-      <change afterPath="$PROJECT_DIR$/HomeWork4/Homework4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork4/IndexHw4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork4/main.css" afterDir="false" />
+    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add HW4">
+      <change afterPath="$PROJECT_DIR$/HomeWork5/Homework5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork5/IndexHw5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,19 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork5" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork3\img" />
     </key>
@@ -64,7 +67,8 @@
       <workItem from="1658864053626" duration="4748000" />
       <workItem from="1658869229114" duration="190000" />
       <workItem from="1659115350779" duration="7188000" />
-      <workItem from="1659464909779" duration="7553000" />
+      <workItem from="1659464909779" duration="8035000" />
+      <workItem from="1659849272593" duration="7911000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1658868626380</created>
@@ -101,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659123113844</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add HW4">
+      <created>1659472858350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659472858350</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +135,7 @@
     <MESSAGE value="add some comments" />
     <MESSAGE value="add Hw3" />
     <MESSAGE value="add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
+    <MESSAGE value="add HW4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HW4" />
   </component>
 </project>
