@@ -97,6 +97,7 @@ function Car(model, producer, year, maxSpeed, engineCapacity) {
         // варіант 1:
         console.log(this) // По суті, це самий банальний варіант і він працює згідно умови. Але я зроблю альтернативу.
         // варіант 2:
+
         console.log(`model - ${this.model}`);
         console.log(`producer - ${this.producer}`);
         console.log(`year - ${this.year}`);

@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+
+}
+.head{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    margin-left: 10px;
+    cursor: default;
+
+}
+
+.menu{
+    font-size: 35px;
+    margin-right: 20px;
+
+
+}
+
+.wind{
+
+    width: 200px;
+    background: white;
+    position: absolute;
+    top:75px;
+    right: 25px;
+    display: none;
+
+}
+
+.divMenu{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.divMenu:hover{
+    background: #cbffcb;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    margin-top: 100px;
+
+
+}
+
+
+
+.member{
+    display: flex;
+    justify-content: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.divPicPlusH{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+
+}
+
+.pic{
+    width: 300px;
+    margin-top: 20px;
+
+}
+
+.divHPlusText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text, .month, .hour{
+    font-size: 30px;
+
+}
+
+.element{
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.task2{
+    margin-top: 100px;
+}
+
+.duration{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.liInUl{
+    font-size: 30px;
+    margin-left: 10px;
+
+
+}
+
+.titleH1Task2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 80px;
+    margin: 0;
+}
+
+.titleTask2{
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+    height: 80px;
+    background: #ffffa6;
+}
+
+.month, .hour{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.b1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.month {
+    border-right: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+}
+.hour{
+    border-bottom: 1px dashed grey;
+}
+
+.warp{
+    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+    color: goldenrod;
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+
+
+
+}
+.collapse{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.blockTask5{
+    margin-top: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    background: goldenrod;
+    margin-bottom: 50px;
+
+}
+.blockTask6{
+    margin-bottom: 50px;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.blockTask7{
+    margin-bottom: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background: #fff6dd;
+
+}
+
+.blockTask8, .blockTask9{
+    margin-bottom: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+
+}
+.blockTask9{
+    padding: 2px;
+}
+
+
+.elem {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: white;
+}
+
+.titleTask5, .titleTask7, .titleTask8, .titleTask9{
+    text-align: center;
+}
+
+.titleTask6{
+    text-align: center;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.heading, .description{
+    text-align: center;
+
+
+}
+
+.description{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.board{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.newLine{
+    display: flex;
+    justify-content: center;
+}
+.newCells{
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}

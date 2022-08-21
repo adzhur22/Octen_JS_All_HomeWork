@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add some tasks">
-      <change afterPath="$PROJECT_DIR$/HomeWork8/Homework8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork8/IndexHw8.html" afterDir="false" />
+    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add HW9">
+      <change afterPath="$PROJECT_DIR$/HomeWork9/Homework9.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork9/Homework9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork9/IndexHw9.3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork9/IndexHw9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork9/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork9/template1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork8/Homework8.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork8/Homework8.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
@@ -42,7 +48,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork8",
+    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +58,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork9" />
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork8" />
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork5" />
     </key>
@@ -73,7 +81,8 @@
       <workItem from="1659849272593" duration="8880000" />
       <workItem from="1660069544298" duration="16825000" />
       <workItem from="1660589445763" duration="5104000" />
-      <workItem from="1660672246838" duration="12921000" />
+      <workItem from="1660672246838" duration="18071000" />
+      <workItem from="1660937430669" duration="47811000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1658868626380</created>
@@ -138,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660594484897</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add HW9">
+      <created>1660685979523</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660685979523</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +181,7 @@
     <MESSAGE value="add HW5" />
     <MESSAGE value="add HW6" />
     <MESSAGE value="add some tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some tasks" />
+    <MESSAGE value="add HW9" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HW9" />
   </component>
 </project>
