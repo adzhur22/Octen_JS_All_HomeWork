@@ -6,23 +6,36 @@
 
 let url = new URL(location.href);
 let idOfUser = url.searchParams.get('id');
-
+let i = 0;
 let divUserContent = document.getElementsByClassName('userContent')[0];
 
 
 fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
     .then((response) => response.json())
     .then((user) => {
+
         // вирішив я рекурсію тут спробувати так як там є об'єкти в середині яких інші об'єкти.
-        // можна було по іншому, але чому б і ні) вроді як получилось)
+        //
+
+
+
         console.log(user);
 
-        function reader (object) {
+        function reader (object, lastObjectKay) {
             if (typeof object === 'object'){
 
                 let block = document.createElement("div");
                 block.classList.add('block');
+                block.id = 'block';
                 divUserContent.appendChild(block);
+
+                if(lastObjectKay){
+                    let addHead = document.createElement('div');
+                    addHead.innerHTML = `<h4>${lastObjectKay}</h4>`;
+                    block.appendChild(addHead);
+                    block.id = lastObjectKay;
+                }
+
 
                 for (const objectKey in object) {
 
@@ -40,9 +53,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
                     }
 
                     else{
-                        pointInformation.innerHTML = `${objectKey}:`;
-                        divUserContent.appendChild(pointInformation);
-                        reader(object[objectKey]);
+                        reader(object[objectKey], objectKey);
                     }
 
                 }
@@ -52,6 +63,13 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
 
         reader(user);
     });
+
+
+let userContentDown = document.getElementsByClassName('userContentDown');
+let but = document.createElement('button');
+userContentDown.appendChild(but);
+
+
 
 
 // На странице post-details.html:
