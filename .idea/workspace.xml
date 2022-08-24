@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add HW9">
-      <change afterPath="$PROJECT_DIR$/HomeWork9/Homework9.3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork9/Homework9.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork9/IndexHw9.3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork9/IndexHw9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork9/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWork9/template1.html" afterDir="false" />
+    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add HW_9_DOM">
+      <change afterPath="$PROJECT_DIR$/Сontrol work/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сontrol work/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сontrol work/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сontrol work/user-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сontrol work/user-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork8/Homework8.js" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork8/Homework8.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork9" />
@@ -82,7 +80,9 @@
       <workItem from="1660069544298" duration="16825000" />
       <workItem from="1660589445763" duration="5104000" />
       <workItem from="1660672246838" duration="18071000" />
-      <workItem from="1660937430669" duration="47811000" />
+      <workItem from="1660937430669" duration="48260000" />
+      <workItem from="1661187072328" duration="730000" />
+      <workItem from="1661277975604" duration="22019000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1658868626380</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660685979523</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add HW_9_DOM">
+      <created>1661105617589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661105617589</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +189,7 @@
     <MESSAGE value="add HW6" />
     <MESSAGE value="add some tasks" />
     <MESSAGE value="add HW9" />
-    <option name="LAST_COMMIT_MESSAGE" value="add HW9" />
+    <MESSAGE value="add HW_9_DOM" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HW_9_DOM" />
   </component>
 </project>
