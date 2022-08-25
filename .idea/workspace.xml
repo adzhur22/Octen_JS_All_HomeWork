@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add some solutions">
-      <change afterPath="$PROJECT_DIR$/Сontrol work/normalize.css" afterDir="false" />
+    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add map">
+      <change afterPath="$PROJECT_DIR$/Сontrol work/post-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Сontrol work/post-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Сontrol work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Сontrol work/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Сontrol work/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/user-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Сontrol work/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Сontrol work/user-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/user-details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,20 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork9" />
@@ -82,7 +84,7 @@
       <workItem from="1660672246838" duration="18071000" />
       <workItem from="1660937430669" duration="48260000" />
       <workItem from="1661187072328" duration="730000" />
-      <workItem from="1661277975604" duration="46945000" />
+      <workItem from="1661277975604" duration="67225000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1658868626380</created>
@@ -175,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661303980824</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add map">
+      <created>1661402613768</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661402613768</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +215,7 @@
     <MESSAGE value="add HW_9_DOM" />
     <MESSAGE value="start" />
     <MESSAGE value="add some solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some solutions" />
+    <MESSAGE value="add map" />
+    <option name="LAST_COMMIT_MESSAGE" value="add map" />
   </component>
 </project>

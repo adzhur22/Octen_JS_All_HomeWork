@@ -20,7 +20,10 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
     .then((user) => {
 
         // вирішив я рекурсію тут спробувати так як там є об'єкти в середині яких інші об'єкти.
-        // хоч можна було по іншому але чому б і ні)
+        // правда зачно легше було просто виводити і не бавитись з цим. Але хотів попрактикуватись.
+        //вивід на сторінці коментарів робив звичайним методомю
+
+        // Відкривайте сторінку не через шлях а не локал хост. Щоб працювала карта!
 
 
         function reader (object, lastObjectKay) { // змінна lastObjectKay, це ім'я обєкта в середині якого є інший обєкт. Я реалізував вичавлення значення цієї змінної щоб одразу добавити її як назву новоствореному блоку з даними.
@@ -49,14 +52,13 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
                         let pointInformation = document.createElement("div");
                         pointInformation.classList.add('pointInformation');
 
-                        pointInformation.innerHTML = `${objectKey}: ${object[objectKey]}`;
+                        pointInformation.innerHTML = `<p>${objectKey}: ${object[objectKey]}</p>`;
                         block.appendChild(pointInformation);
 
                     }
                     if (typeof object[objectKey] !== 'object' && lastObjectKay === 'geo' && i2 === 0) {
 
                         let mapa = document.getElementById('geo');
-                        console.log(mapa);
 
                         let divMap = document.createElement('div');
                         divMap.id = 'map';
@@ -64,7 +66,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
 
                         let lat = parseFloat(object.lat);
                         let lng = parseFloat(object.lng);
-                        console.log(lat, lng);
 
                         function initMap() {
 
@@ -95,7 +96,38 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
         }
 
         reader(user);
+
+
+        //на цьому етапі я вирішив добавити "фото юзеру". Тому потрібно було дістати всю інформацию і
+        //запакувати в окремий дів
+
+        let divPersonalInf = document.getElementById('block');
+        console.log(divPersonalInf);
+
+        let divInformationOfUser = document.createElement('div');
+        divInformationOfUser.classList.add('divInformationOfUser');
+        divPersonalInf.appendChild(divInformationOfUser);
+
+        let inf = document.querySelectorAll('#block > .pointInformation');
+        console.log(inf);
+
+        for (const infElement of inf) {
+            divInformationOfUser.appendChild(infElement);
+
+        }
+
+        let photoDiv = document.createElement('div');
+        photoDiv.classList.add('photoDiv');
+        divPersonalInf.appendChild(photoDiv);
+
+        let photo = document.createElement('img');
+        photo.classList.add('photo');
+        photo.src = 'https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745';
+        photoDiv.appendChild(photo);
+
+        divInformationOfUser.before(photoDiv);
     });
+
 
 
 let userContentDown = document.getElementsByClassName('userContentDown')[0];
@@ -115,23 +147,23 @@ but.onclick = (() =>{
 
         fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}/posts`)
             .then((response) => response.json())
-            .then((users) => {
-                for (const user of users) {
+            .then((allPost) => {
+                for (const post of allPost) {
 
                     let titlePosts = document.createElement("div");
                     titlePosts.classList.add('titlePosts');
 
                     boxOfTitlePosts.appendChild(titlePosts);
 
-                    titlePosts.innerHTML = `<h4>Post:</h4> <p><b>${user.title}</b></p>`;
+                    titlePosts.innerHTML = `<p class="hTitle">post</p> <p class="pTitle"><b>${post.title}</b></p>`;
 
                     let button = document.createElement("button");
                     button.classList.add('buttonDetails');
-                    button.innerText = 'details';
+                    button.innerText = 'view post';
                     titlePosts.appendChild(button);
 
                     button.onclick = () => {
-                        location.href = `user-details.html?id=${user.id}`;
+                        location.href = `post-details.html?post-id=${post.id}`;
                     };
 
                 }
@@ -154,18 +186,6 @@ but.onclick = (() =>{
 
 
 
-
-
-// На странице post-details.html:
-// 7 Вывести всю, без исключения, информацию про объект post на кнопку/ссылку которого был совершен клик ранее.
-// 8 Ниже информации про пост, вывести все комментарии текущего поста (эндпоинт для получения информации - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
-//
-// Стилизация проекта -
-// index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.
-// user-details.html - блок с информацией про user вверху страницы. Кнопка ниже, на 90% ширины страницы, по центру.
-// блоки с краткой информацией про post - в ряд по 5 объектов.
-// post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.
-// Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так, что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
 
 
 

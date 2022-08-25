@@ -6,6 +6,9 @@
 }
 
 .user{
+
+
+    background: #D4E0B4;
     width: 40%;
     border: 1px solid black;
     box-sizing: border-box;
@@ -14,7 +17,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
+
 
 .userId{
     width: 100%;
@@ -24,6 +29,7 @@
 
 
 .button{
+
     width: 120px;
     height: 25px;
     border: 1px solid black;
@@ -31,17 +37,95 @@
     margin-bottom: 5px;
     text-align: center;
     line-height: 22px;
-    border-radius: 5px;
+
 
 }
+
+.button2{
+
+
+    width: 90%;
+    height: 35px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+
+}
+
+.buttonDetails{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+
+}
+
+
 
 .button:hover, .button2:hover, .buttonDetails:hover{
-    background: #c5ff93;
+    background: #D1F7BA;
 
 }
 
 
-.fullContent{
+
+.block{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+#block{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+
+.divInformationOfUser{
+    width: 100%;
+
+}
+
+.photoDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointInformation {
+
+    background: #D4E0B4;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pointInformation > p{
+
+margin-left: 5px;
+
+}
+
+.address, .company{
+    text-align: center;
+    background: #CADEE0;
+}
+
+
+
+
+
+.fullContent, .mainPostDetails{
     margin-top: 10px;
     margin-left: 2%;
     margin-right: 2%;
@@ -58,36 +142,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 600px;
     flex-wrap: wrap;
 
-}
-
-.block{
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-
-
-#block{
-    width: 75%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-#block > :nth-child(1){
-    text-align: left;
-    position: absolute;
-    top: 20px;
-    left: 3%;
-}
-
-#block > :nth-child(1n + 2){
-    font-size: 20px;
 }
 
 
@@ -105,14 +162,6 @@
 
 }
 
-.button2{
-    width: 90%;
-    height: 35px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 2px;
-
-}
 
 .boxOfTitlePosts{
 
@@ -130,8 +179,7 @@
     border: 1px solid black;
     box-sizing: border-box;
     text-align: left;
-    border-radius: 5px;
-    padding: 5px;
+
 
     display: flex;
     justify-content: space-between;
@@ -139,18 +187,23 @@
 
 }
 
-.titlePosts > p{
-    margin-top: 0;
+.hTitle{
+    margin: 0;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+}
+.pTitle{
+
+    background: #D4E0B4;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
 }
 
-.buttonDetails{
-    margin-bottom: 10px;
-    height: 25px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 2px;
 
-}
+
+
 #map {
     width: 100%;
     height: 100%;
@@ -159,3 +212,70 @@
 .geo{
     display: none;
 }
+
+.divPost{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.divIdInformation{
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+}
+
+.postId, .userIdInPageAboutPost{
+    margin-left: 10px;
+
+}
+
+.divPostInformation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.postBody {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+.divComments{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+
+.divComment{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 20%;
+    margin: 2.5%;
+
+}
+
+.divMiddle{
+   margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.divBottom{
+    margin-bottom: 5px;
+}
+
+
+.postCommentId{
+    text-align: right;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+
+
+

@@ -24,7 +24,7 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
             userId.innerHTML = `id: ${user.id}`;
             userName.innerHTML = `<h3>${user.name}</h3>`;
-            button.innerText = 'Детальніше'
+            button.innerText = 'view user'
             button.onclick = (() =>{
                 location.href = `user-details.html?id=${user.id}`;
             });
