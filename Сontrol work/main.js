@@ -50,17 +50,18 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
         let searchButton = document.createElement('button');
         searchButton.innerHTML = 'search';
 
-        divSerarch.appendChild(form);
+        let cancelButton = document.createElement('button');
+        cancelButton.innerHTML = 'clear filter';
+
+        divSerarch.append(form,cancelButton);
         form.append(input, searchButton);
 
         let numberOffBlock = 0;
+        let nameArray = document.querySelectorAll('h3');
+
 
         form.onsubmit = function (e) {
             e.preventDefault();
-
-            let nameArray = document.querySelectorAll('h3');
-
-
 
             for (let i = 0; i < nameArray.length; i++) {
                 let text = (nameArray[i].textContent).toLowerCase();
@@ -86,28 +87,75 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
                 content.appendChild(div);
             }
 
-            // for (const user of divWithUsers) {
-            //
-            //
-            //
-            //
-            // }
+
+        };
 
 
+        cancelButton.onclick = function () {
 
+            for (const user of divWithUsers) {
+                user.style.display = 'flex';
 
-
-
-
-
-
-
+            }
 
         };
 
 
 
+
+
     });
+
+
+// Наступне додаткове  це робота з  localStorage, тут будуть виводитись останні 5
+// постів які переглядав користувач
+let LastViewedPost =  document.getElementsByClassName('LastViewedPost');
+
+let localPostId = JSON.parse(localStorage.getItem('post_id'));
+
+
+for( let i = 0;  i < localPostId.length; i++){
+    console.log(localPostId[i]);
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${localPostId[i]}`)
+        .then((response) => response.json())
+        .then((post) => {
+
+            // console.log(post);
+
+            let title = document.createElement("div");
+            title.innerHTML =  post.title;
+            title.classList.add('address');
+
+            LastViewedPost[i].appendChild(title);
+
+            let button = document.createElement("button");
+            button.innerHTML = 'view post again';
+            LastViewedPost[i].appendChild(button);
+
+            button.onclick = function () {
+
+                location.href = `post-details.html?post-id=${localPostId[i]}`;
+
+
+            };
+        });
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // продовження на сорінці user-details.js:

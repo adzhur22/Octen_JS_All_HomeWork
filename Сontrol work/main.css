@@ -53,13 +53,11 @@
 }
 
 .buttonDetails{
-    margin-left: 5px;
-    margin-right: 5px;
     margin-bottom: 10px;
     height: 25px;
     border: 1px solid black;
     box-sizing: border-box;
-
+    width: 80%;
 
 }
 
@@ -90,7 +88,7 @@
 
 }
 
-.divInformationOfUser{
+.divInformationOfUser, .postTitle{
     width: 100%;
 
 }
@@ -116,7 +114,7 @@ margin-left: 5px;
 
 }
 
-.address, .company{
+.address, .company, .postTitle > h3{
     text-align: center;
     background: #CADEE0;
 }
@@ -131,6 +129,8 @@ margin-left: 5px;
     margin-right: 2%;
     width: 96%;
     height: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 
@@ -184,6 +184,7 @@ margin-left: 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
 
 }
 
@@ -191,11 +192,12 @@ margin-left: 5px;
     margin: 0;
     border-bottom: 1px solid #d0d0d0;
     text-align: center;
+    width: 100%;
 }
-.pTitle{
-
+.pTitle, .postBody{
     background: #D4E0B4;
     border-radius: 5px;
+    box-sizing: border-box;
     margin-right: 5px;
     margin-left: 5px;
     text-align: center;
@@ -211,11 +213,6 @@ margin-left: 5px;
 
 .geo{
     display: none;
-}
-
-.divPost{
-    border: 1px solid black;
-    box-sizing: border-box;
 }
 
 .divIdInformation{
@@ -237,9 +234,9 @@ margin-left: 5px;
     align-items: center;
 }
 .postBody {
-    text-align: left;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -248,34 +245,93 @@ margin-left: 5px;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+
 }
 
 
 .divComment{
     border: 1px solid black;
     box-sizing: border-box;
-    width: 20%;
-    margin: 2.5%;
+    width: 22.5%;
+    margin: 1.25%;
+    background: white;
 
 }
 
 .divMiddle{
-   margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 13px;
+    background: #D1F7BA;
+    text-align: center;
+
+
 }
 
 .divBottom{
-    margin-bottom: 5px;
-}
+    margin: 10px;
+    font-size: 16px;
+    background: #D4E0B4;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 5px;
 
+}
 
 .postCommentId{
     text-align: right;
-    border-bottom: 1px solid #dcdcdc;
     box-sizing: border-box;
     margin-right: 5px;
 }
 
+.search{
+    display: flex;
+    justify-content: left;
+
+}
+
+.search > form > input, .search > form{
+    margin-right: 10px;
+
+}
 
 
+.divTop{
+    background: white;
+    font-size: 13px;
+    border-bottom: 1px grey solid;
+    box-sizing: border-box;
+}
 
+.commentatorsName{
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.commentatorsEmail{
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+.LastViewedPosts{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border: 1px grey solid;
+    box-sizing: border-box;
+
+}
+
+
+.LastViewedPost{
+
+    width: 150px;
+
+    margin: 10px;
+    border: 1px grey solid;
+    box-sizing: border-box;
+
+}

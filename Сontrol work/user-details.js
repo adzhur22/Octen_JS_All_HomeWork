@@ -67,22 +67,26 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
                         let lat = parseFloat(object.lat);
                         let lng = parseFloat(object.lng);
 
+
                         function initMap() {
 
-                            const uluru = { lat: lat, lng: lng};
+                                const uluru = { lat: lat, lng: lng};
 
-                            const map = new google.maps.Map(document.getElementById("map"), {
-                                zoom: 1,
-                                center: uluru,
-                            });
+                                const map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 1,
+                                    center: uluru,
+                                });
 
-                            const marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map,
-                            });
+
+                                const marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map,
+                                });
+
                         }
 
                         initMap();
+
                         i2++;
                     }
 
@@ -102,14 +106,12 @@ fetch(`https://jsonplaceholder.typicode.com/users/${idOfUser}`)
         //запакувати в окремий дів
 
         let divPersonalInf = document.getElementById('block');
-        console.log(divPersonalInf);
 
         let divInformationOfUser = document.createElement('div');
         divInformationOfUser.classList.add('divInformationOfUser');
         divPersonalInf.appendChild(divInformationOfUser);
 
         let inf = document.querySelectorAll('#block > .pointInformation');
-        console.log(inf);
 
         for (const infElement of inf) {
             divInformationOfUser.appendChild(infElement);
@@ -164,6 +166,33 @@ but.onclick = (() =>{
 
                     button.onclick = () => {
                         location.href = `post-details.html?post-id=${post.id}`;
+
+
+
+// це нижче реалізований запис в localStorage ІД постів які відвідав користувач.
+
+                        let localPostId = JSON.parse(localStorage.getItem('post_id'));
+
+                        if (!localPostId){
+                            localStorage.post_id = JSON.stringify([]);
+                            localPostId = JSON.parse(localStorage.getItem('post_id'));
+                        }
+
+
+                        if (!localPostId.includes(post.id)) {
+
+                            if (localPostId.length >= 5) {
+                                localPostId.pop();
+                                localPostId.unshift(post.id)
+
+                            } else {
+                                localPostId.unshift(post.id);
+                            }
+
+                        }
+
+
+                        localStorage.post_id = JSON.stringify(localPostId);
                     };
 
                 }
@@ -172,6 +201,9 @@ but.onclick = (() =>{
 
     i++;
     }
+
+    //це функціонал кнопки яка відкриває і скриває пости
+
     else  if (i === 1){
         boxOfTitlePosts.style.display = 'none';
         i++;
@@ -183,9 +215,4 @@ but.onclick = (() =>{
 
 
         });
-
-
-
-
-
 

@@ -39,10 +39,9 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${idOfPost}`)
 fetch(`https://jsonplaceholder.typicode.com/posts/${idOfPost}/comments`)
     .then((response) => response.json())
     .then((postComments) => {
-            console.log(postComments);
 
         for (const postComment of postComments) {
-            console.log(postComment);
+
             let divComments = document.querySelector('.divComments');
 
             let divComment = document.createElement('div');
