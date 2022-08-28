@@ -12,7 +12,7 @@ if(!attention) {
 
 let content = document.getElementsByClassName('content')[0];
 
-let users = fetch('https://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
     .then((users) => {
         for (const user of users) {
@@ -45,8 +45,9 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
         // я думав над додатковим функціоналом і мабуть на подібних сайтах є пошук. тому реалізую його
         // як додаткове завдання
 
+
         let divWithUsers = document.getElementsByClassName('user');
-        let divSerarch = document.getElementsByClassName('search')[0];
+        let divSearch = document.getElementsByClassName('search')[0];
 
         let form = document.createElement('form');
         form.name = 'searchForm';
@@ -60,7 +61,7 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
         let cancelButton = document.createElement('button');
         cancelButton.innerHTML = 'clear filter';
 
-        divSerarch.append(form,cancelButton);
+        divSearch.append(form,cancelButton);
         form.append(input, searchButton);
 
 
@@ -76,9 +77,9 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
             for (let i = 0; i < nameArray.length; i++) {
                 let text = (nameArray[i].textContent).toLowerCase();
-                let searhtext = (input.value).toLowerCase();
+                let searchText = (input.value).toLowerCase();
 
-                let res = text.search(searhtext);
+                let res = text.search(searchText);
 
 
                 if(res === -1){
@@ -143,6 +144,7 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
 // Наступне додаткове  це робота з  localStorage, тут будуть виводитись останні 5
 // постів які переглядав користувач
+
 let LastViewedPost =  document.getElementsByClassName('LastViewedPost');
 
 let localPostId = JSON.parse(localStorage.getItem('post_id'));
