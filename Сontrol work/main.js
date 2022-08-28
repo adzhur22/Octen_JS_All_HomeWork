@@ -3,6 +3,13 @@
 // 2 Вывести id,name всех user в index.html. Отдельный блок для каждого user.
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html, которая имеет детальную информацию про объект на который кликнули
 
+let attention = JSON.parse(localStorage.getItem('attention'));
+if(!attention) {
+    alert('Важливо! Відкривайте цю роботу НЕ через http://localhost/. Це потрібно для коректної роботи гугл карти.');
+    localStorage.attention = JSON.stringify(true);
+
+}
+
 let content = document.getElementsByClassName('content')[0];
 
 let users = fetch('https://jsonplaceholder.typicode.com/users')
