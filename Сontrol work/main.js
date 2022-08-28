@@ -5,7 +5,7 @@
 
 let attention = JSON.parse(localStorage.getItem('attention'));
 if(!attention) {
-    alert('Важливо! Відкривайте цю роботу НЕ через http://localhost/. Це потрібно для коректної роботи гугл карти.');
+    alert(`Важливо!!! Відкривайте цю роботу НЕ через http://localhost/. Це потрібно для коректної роботи гугл карти.`);
     localStorage.attention = JSON.stringify(true);
 
 }
