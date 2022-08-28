@@ -168,31 +168,8 @@ but.onclick = (() =>{
                         location.href = `post-details.html?post-id=${post.id}`;
 
 
+                        local(post.id);
 
-// це нижче реалізований запис в localStorage ІД постів які відвідав користувач.
-
-                        let localPostId = JSON.parse(localStorage.getItem('post_id'));
-
-                        if (!localPostId){
-                            localStorage.post_id = JSON.stringify([]);
-                            localPostId = JSON.parse(localStorage.getItem('post_id'));
-                        }
-
-
-                        if (!localPostId.includes(post.id)) {
-
-                            if (localPostId.length >= 5) {
-                                localPostId.pop();
-                                localPostId.unshift(post.id)
-
-                            } else {
-                                localPostId.unshift(post.id);
-                            }
-
-                        }
-
-
-                        localStorage.post_id = JSON.stringify(localPostId);
                     };
 
                 }

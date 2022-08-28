@@ -39,7 +39,6 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
         // як додаткове завдання
 
         let divWithUsers = document.getElementsByClassName('user');
-
         let divSerarch = document.getElementsByClassName('search')[0];
 
         let form = document.createElement('form');
@@ -50,18 +49,23 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
         let searchButton = document.createElement('button');
         searchButton.innerHTML = 'search';
 
+
         let cancelButton = document.createElement('button');
         cancelButton.innerHTML = 'clear filter';
 
         divSerarch.append(form,cancelButton);
         form.append(input, searchButton);
 
-        let numberOffBlock = 0;
-        let nameArray = document.querySelectorAll('h3');
 
+        let nameArray = document.querySelectorAll('.userName > h3');
 
         form.onsubmit = function (e) {
+
             e.preventDefault();
+            let divWithUsers = document.getElementsByClassName('user');
+            console.log(divWithUsers);
+            let numberOffBlock = 0;
+
 
             for (let i = 0; i < nameArray.length; i++) {
                 let text = (nameArray[i].textContent).toLowerCase();
@@ -71,6 +75,8 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
 
                 if(res === -1){
+                    searchButton.setAttribute('disabled', 'false');
+                    console.log(divWithUsers[i]);
                     divWithUsers[i].style.display = 'none';
                     numberOffBlock++;
                 }
@@ -78,13 +84,25 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
             }
 
+            console.log(numberOffBlock);
+            console.log(divWithUsers.length);
             if(numberOffBlock === divWithUsers.length){
 
-                console.log('Пошук не дав результатів')
-                let div = document.createElement("div");
-                div.classList.add('user');
-                div.innerHTML = 'Пошук не дав результатів';
-                content.appendChild(div);
+                let div = document.getElementById('noResults');
+
+                if(!div){
+                    let div = document.createElement("div");
+                    div.classList.add('noResults');
+                    div.id = 'noResults';
+                    div.innerHTML = 'not found';
+                    content.appendChild(div);
+                }
+
+
+                if(div && div.style.display === 'none'){
+                    div.style.display = 'flex';
+
+                }
             }
 
 
@@ -93,8 +111,17 @@ let users = fetch('https://jsonplaceholder.typicode.com/users')
 
         cancelButton.onclick = function () {
 
+            input.value = '';
+            searchButton.removeAttribute('disabled');
+
             for (const user of divWithUsers) {
+                let div = document.getElementById('noResults');
                 user.style.display = 'flex';
+
+                if(div){
+                    div.style.display = 'none';
+                }
+
 
             }
 
@@ -114,36 +141,50 @@ let LastViewedPost =  document.getElementsByClassName('LastViewedPost');
 let localPostId = JSON.parse(localStorage.getItem('post_id'));
 
 
-for( let i = 0;  i < localPostId.length; i++){
-    console.log(localPostId[i]);
+if(localPostId){
 
-    fetch(`https://jsonplaceholder.typicode.com/posts/${localPostId[i]}`)
-        .then((response) => response.json())
-        .then((post) => {
-
-            // console.log(post);
-
-            let title = document.createElement("div");
-            title.innerHTML =  post.title;
-            title.classList.add('address');
-
-            LastViewedPost[i].appendChild(title);
-
-            let button = document.createElement("button");
-            button.innerHTML = 'view post again';
-            LastViewedPost[i].appendChild(button);
-
-            button.onclick = function () {
-
-                location.href = `post-details.html?post-id=${localPostId[i]}`;
+    for( let i = 0;  i < localPostId.length; i++){
 
 
-            };
-        });
+        fetch(`https://jsonplaceholder.typicode.com/posts/${localPostId[i]}`)
+            .then((response) => response.json())
+            .then((post) => {
+
+                // console.log(post);
+
+                let title = document.createElement("div");
+                title.innerHTML =  post.title;
+                title.classList.add('address');
+
+                LastViewedPost[i].appendChild(title);
+
+                let button = document.createElement("button");
+                button.innerHTML = 'view post again';
+                LastViewedPost[i].appendChild(button);
+
+                button.onclick = function () {
+
+                    location.href = `post-details.html?post-id=${localPostId[i]}`;
 
 
+                };
+            });
+
+
+
+    }
 
 }
+else {
+
+    let title = document.createElement("div");
+    title.innerHTML =  `<p>You need to view any post.<p> <p>Then you will see it here.</p>`;
+    title.classList.add('address');
+
+    LastViewedPost[2].appendChild(title);
+
+}
+
 
 
 
