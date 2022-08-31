@@ -150,7 +150,15 @@ let LastViewedPost =  document.getElementsByClassName('LastViewedPost');
 let localPostId = JSON.parse(localStorage.getItem('post_id'));
 
 
-if(localPostId){
+if(!localPostId || localPostId.length === 0) {
+
+    let title = document.createElement("div");
+    title.innerHTML =  `<p>You need to view any post.<p> <p>Then you will see it here.</p>`;
+    title.classList.add('address');
+
+    LastViewedPost[2].appendChild(title);
+
+}else if(localPostId.length > 0){
 
     for( let i = 0;  i < localPostId.length; i++){
 
@@ -184,15 +192,7 @@ if(localPostId){
     }
 
 }
-else {
 
-    let title = document.createElement("div");
-    title.innerHTML =  `<p>You need to view any post.<p> <p>Then you will see it here.</p>`;
-    title.classList.add('address');
-
-    LastViewedPost[2].appendChild(title);
-
-}
 
 
 

@@ -83,6 +83,15 @@ pages.onclick = function () {
 
         };
 
+        let clearHistory = document.createElement("button");
+        clearHistory.classList.add('clearHistory');
+        clearHistory.innerText = 'clear history';
+        boxMenu.appendChild(clearHistory);
+        clearHistory.onclick = function () {
+            localStorage.post_id = JSON.stringify([]);
+            location.reload()
+        }
+
 
     }
 
