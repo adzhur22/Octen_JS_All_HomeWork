@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="add &quot;attention&quot;">
+    <list default="true" id="748d7aca-405f-4766-9558-a029963e1057" name="Changes" comment="correct some mistakes">
+      <change afterPath="$PROJECT_DIR$/HomeWork10/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork10/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Сontrol work/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Сontrol work/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +18,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/It/Project/June2022/js/Octen_JS_All_HomeWork/HomeWork9&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\It\Project\June2022\js\Octen_JS_All_HomeWork\HomeWork9" />
@@ -79,7 +81,9 @@
       <workItem from="1660672246838" duration="18071000" />
       <workItem from="1660937430669" duration="48260000" />
       <workItem from="1661187072328" duration="730000" />
-      <workItem from="1661277975604" duration="117854000" />
+      <workItem from="1661277975604" duration="118625000" />
+      <workItem from="1661796013532" duration="12683000" />
+      <workItem from="1661886077279" duration="4412000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1658868626380</created>
@@ -228,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661695665574</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="correct some mistakes">
+      <created>1661702219569</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1661702219569</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,8 +275,8 @@
     <MESSAGE value="add search" />
     <MESSAGE value="add LastViewedPost" />
     <MESSAGE value="done" />
-    <MESSAGE value="correct some mistakes" />
     <MESSAGE value="add &quot;attention&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;attention&quot;" />
+    <MESSAGE value="correct some mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct some mistakes" />
   </component>
 </project>
